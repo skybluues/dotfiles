@@ -97,6 +97,19 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
 
+" try to prevent bad habits like using the arrow keys for movement
+nnoremap <Left>     :echoe "Use h"<CR>
+nnoremap <Right>    :echoe "Use l"<CR>
+nnoremap <Up>       :echoe "Use k"<CR>
+nnoremap <Down>     :echoe "Use j"<CR>
+inoremap <Left>     <Esc>:echoe "Use h"<CR>
+inoremap <Right>    <Esc>:echoe "Use l"<CR>
+inoremap <Up>       <Esc>:echoe "Use k"<CR>
+inoremap <Down>     <Esc>:echoe "Use j"<CR>
+
+" tricks
+nnoremap <Space> :echo "You look so cool! ^_^"<CR>
+
 "---------------------
 " Local customizations
 "---------------------

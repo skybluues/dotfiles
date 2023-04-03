@@ -1,0 +1,10 @@
+Host test1
+    User qinqiqiang
+    HostName 10.10.10.10
+    Port 22
+    IdentityFile ~/.ssh/id_ed25519
+    LocalForward 9999 localhost:8888
+
+# Configs can also take wildcards
+Host *test
+    User qinqiqiang

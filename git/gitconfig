@@ -1,0 +1,9 @@
+[user]
+    name = qinqiqiang
+    email = qinqiqiang128@163.com
+[core]
+    filemode = false
+    autocrlf = input
+
+[include]
+    path = ~/.gitconfig_local

@@ -1,0 +1,26 @@
+### aliases
+alias mv="mv -i"
+alias k9="kill -9"
+alias mkdir="mkdir -p"
+alias v="vim"
+
+### functions
+pidwait() {
+  if [[ ! $# -eq 1 ]]; then
+    echo "usage: pps <pid>"
+    return 1
+  fi
+  pid=$1
+  while (true);do
+    kill -0 $pid >> /dev/null 2>&1
+    if [[ $? -eq 0 ]];then
+      sleep 1
+    else
+      break
+    fi
+  done
+}
+
+pps() {
+  ps ux | grep -v vscode | grep -v sleep | grep -v bash | grep -v zsh | grep -v tmux | grep -v ssh
+}

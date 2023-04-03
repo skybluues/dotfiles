@@ -1,0 +1,14 @@
+# source global definitions
+if [[ -f /etc/bashrc ]];then
+    . /etc/bashrc
+fi
+
+# source local definitions
+if [[ -f ~/.alias_functions ]];then
+    source ~/.alias_functions
+fi
+
+# source local functions and aliases
+if [[ -f ~/.bashrc_local ]];then
+    source ~/.bashrc_local
+fi
