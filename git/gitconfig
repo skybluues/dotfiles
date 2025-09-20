@@ -1,9 +1,16 @@
 [user]
-    name = qinqiqiang
-    email = qinqiqiang128@163.com
+    name = skybluues
+    email = skybluuues@gmail.com
 [core]
     filemode = false
     autocrlf = input
-
+    editor = vim
+[pull]
+	rebase = true
+[alias]
+	st = status
+	ci = commit
+	co = checkout
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 [include]
     path = ~/.gitconfig_local

@@ -201,6 +201,18 @@
 	// 	],
 	// 	"description": "Code snippet for header guard"
 	// }
+	// "header guard": {
+	// 	"prefix": "guard",
+	// 	"body": [
+	// 		"#ifndef ${TM_FILENAME_BASE/(.*)/${1:/upcase}/}_H",
+	// 		"#define ${TM_FILENAME_BASE/(.*)/${1:/upcase}/}_H",
+	// 		"",
+	// 		"$0",
+	// 		"",
+	// 		"#endif // ${TM_FILENAME_BASE/(.*)/${1:/upcase}/}_H"
+	// 	],
+	// 	"description": "Code snippet for header guard"
+	// },
 	"header guard": {
 		"prefix": "guard",
 		"body": [
